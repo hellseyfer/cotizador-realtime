@@ -44,7 +44,7 @@ export class AppComponent {
   }
 
   public startCount(): void {
-    this._timerService.startCount(this.to, this.from);
+    this._timerService.startCount(this.from, this.to);
   }
 
   public stopCount(): void {

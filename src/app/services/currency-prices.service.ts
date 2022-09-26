@@ -20,8 +20,8 @@ export class CurrencyPricesService {
       apikey: this.asd,
     };
     const params = {
-      to: compareTo,
       from: currency,
+      to: compareTo,
       amount: 1,
     };
 
