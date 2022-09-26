@@ -87,7 +87,7 @@ export class TimerService {
     this.running$.next(false);
   }
 
-   private secondsToStopWatch(seconds: number): StopWatch {
+  /*    private secondsToStopWatch(seconds: number): StopWatch {
     let rest = seconds;
     const hours = Math.floor(seconds / 3600);
     rest = seconds % 3600;
@@ -99,7 +99,7 @@ export class TimerService {
       minutes: this.convertToNumberString(minutes),
       seconds: this.convertToNumberString(seconds),
     };
-  }
+  } */
 
   private convertToNumberString(value: number): string {
     return `${value < 10 ? '0' + value : value}`;
