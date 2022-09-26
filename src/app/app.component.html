@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+
+<div>
+  {{ timeleft }}
+</div>
+<button (click)="startCount()">Start</button>
+<button (click)="stopCount()">Stop</button>
+<button (click)="resetTimer()">Reset</button>
+
+<h3>{{ amout }} {{ from }} to {{ to }}:</h3>
+{{ ratesResult.result | json }}
