@@ -27,7 +27,6 @@ export class AppComponent {
   ) {
     this.subscriptions.add(
       this._timerService.stopWatch$.subscribe((val: StopWatch) => {
-        //this.stopwatch = val;
         this.timeleft = this._timerService.timeLeftString(val);
       })
     );
